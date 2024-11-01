@@ -1,0 +1,31 @@
+
+.librosDestacados{
+    padding: 5em;
+    display: flex;
+    justify-content:space-around ;
+}
+
+.librosDestacados .card{
+    background-color: #28524A;
+    color: whitesmoke;
+}
+
+.librosDestacados .card p{
+    font-size: 12px;
+}
+@media (max-width: 768px) {
+    .librosDestacados {
+        padding: 3em 1em; /* Ajusta el padding en dispositivos más pequeños */
+        justify-content: center; /* Centra los elementos */
+    }
+
+    .librosDestacados .card {
+        flex: 0 1 100%; /* Tarjetas ocuparán el 100% en pantallas pequeñas */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .librosDestacados .card {
+        flex: 0 1 45%; /* Tarjetas ocuparán el 45% en pantallas medianas */
+    }
+}
